@@ -16,7 +16,9 @@ As our STM32F401CCU6 has only one hardware thread, Multi-threading is impossible
 - Task3
   
  **Default Task** - Indicated the working of the RTOS by setting the PB7 Led to ON
+ 
  __Task 2__ - LDR with Led 
+ 
  **Task 3** - LM35 (Temperature Sensor) with USART2
 
 ---
