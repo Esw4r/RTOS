@@ -10,7 +10,7 @@ As our STM32F401CCU6 has only one hardware thread, Multi-threading is impossible
 - The RTOS uses a scheduler and context switching to make this happen.
 
 ---
-### 3 Primary Tasks:
+### 3 Primary Tasks Used:
 - Default Task
 - Task2
 - Task3
