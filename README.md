@@ -1,5 +1,36 @@
 # Implementation of RTOS for Smart Home Control
 
+## Repository Structure
+/ (root)
+  ├── Core/                — main application code, ADC, tasks, sensor handling  
+  ├── Drivers/             — HAL drivers, board-specific code  
+  ├── Middlewares/Third_Party/FreeRTOS/Source/  — RTOS kernel sources  
+  ├── .project, .cproject, .mxproject  — STM32CubeIDE project files  
+  ├── STM32F401CCU6_FLASH.ld  — Linker script / memory layout  
+  └── README.md            — (this file)  
+
+## How to Build & Flash
+
+1. **Clone the repository**
+    ```bash
+    git clone https://github.com/Esw4r/RTOS.git
+    cd RTOS
+    ```
+2. **Open the project** in STM32CubeIDE  
+   (or import as an existing workspace project — `.project`, `.cproject`, and `.mxproject` are included)
+3. **Configure hardware (if needed):**
+    - Ensure ADC channels correspond to LM35 (e.g., **PA0**) and LDR (e.g., **PA1**)
+    - Ensure USART2 pins (**PA2/PA3**) are correctly configured
+    - Verify LED pins (e.g., **PB6**, **PB7**) are set properly
+4. **Build the project**  
+   Compile and link using STM32CubeIDE's build option
+5. **Flash to the MCU**  
+   Use **ST-LINK** or the IDE's built-in debugger/flashing tools
+6. **Run / Observe:**
+    - Live temperature and LDR readings via **USART2**
+    - LED behavior (status LED, LDR-based LED control)
+    - Proper RTOS task scheduling and responsiveness
+      
 ## What is RTOS?
 RTOS stands for Real-Time Operating System — basically, it’s an operating system with a strict sense of timing.
 Unlike General Purpose which addresses a certain task only when its possibly can, RTOS will get to the task right on the scheduled time. Thats why its called "Real" Time OS.
