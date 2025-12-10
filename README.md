@@ -1,13 +1,14 @@
 # Implementation of RTOS for Smart Home Control
 
 ## Repository Structure
-/ (root)
-  ├── Core/                — main application code, ADC, tasks, sensor handling  
-  ├── Drivers/             — HAL drivers, board-specific code  
-  ├── Middlewares/Third_Party/FreeRTOS/Source/  — RTOS kernel sources  
-  ├── .project, .cproject, .mxproject  — STM32CubeIDE project files  
-  ├── STM32F401CCU6_FLASH.ld  — Linker script / memory layout  
-  └── README.md            — (this file)  
+
+    / (root)
+    ├── Core/                               # Main application code, ADC, tasks, sensor handling
+    ├── Drivers/                            # HAL drivers, board-specific code
+    ├── Middlewares/Third_Party/FreeRTOS/Source/   # RTOS kernel sources
+    ├── .project, .cproject, .mxproject     # STM32CubeIDE project files
+    ├── STM32F401CCU6_FLASH.ld              # Linker script / memory layout
+    └── README.md                           # (this file)
 
 ## How to Build & Flash
 
