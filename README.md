@@ -5,7 +5,7 @@ An Implemention of study of RTOS and Embedded Systems to build a Smart Home Cont
 **What is RTOS?**
 RTOS stands for Real-Time Operating System — basically, it’s an operating system with a strict sense of timing.
 Unlike General Purpose which addresses a certain task only when its possibly can, RTOS will get to the task right on the scheduled time. Thats why its called "Real" Time OS.
-** Multitasking in RTOS **
+**Multitasking in RTOS**
 As our STM32F401CCU6 has only one hardware thread, Multi-threading is impossible here. The CPU runs one task at a time, but the RTOS switches between tasks so quickly it feels like they run in parallel.
 - Each task gets CPU time according to its priority and scheduling policy.
 - The RTOS uses a scheduler and context switching to make this happen.
@@ -29,7 +29,7 @@ As our STM32F401CCU6 has only one hardware thread, Multi-threading is impossible
     ```
 2. **Open the project** in STM32CubeIDE  
    (or import as an existing workspace project — `.project`, `.cproject`, and `.mxproject` are included)
-3. **Configure hardware **
+3. **Configure hardware**
    - The Configuration for the current setup is given below
 5. **Build the project**  
    Compile and link using STM32CubeIDE's build option
