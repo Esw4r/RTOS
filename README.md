@@ -2,7 +2,7 @@
 
 An Implemention of study of RTOS and Embedded Systems to build a Smart Home Control System using an STM32 and STM32Cube(Environment to edit configs and download code to STM32). The Used Setup and Configs are given below in this readme file. 
 
-## What is RTOS?
+**What is RTOS?**
 RTOS stands for Real-Time Operating System — basically, it’s an operating system with a strict sense of timing.
 Unlike General Purpose which addresses a certain task only when its possibly can, RTOS will get to the task right on the scheduled time. Thats why its called "Real" Time OS.
 ** Multitasking in RTOS **
