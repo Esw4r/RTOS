@@ -3,11 +3,11 @@
 An Implemention of study of RTOS and Embedded Systems to build a Smart Home Control System using an STM32 and STM32Cube(Environment to edit configs and download code to STM32). The Used Setup and Configs are given below in this readme file. 
 
 **What is RTOS?**
-RTOS stands for Real-Time Operating System — basically, it’s an operating system with a strict sense of timing.
+- RTOS stands for Real-Time Operating System — basically, it’s an operating system with a strict sense of timing.
 Unlike General Purpose which addresses a certain task only when its possibly can, RTOS will get to the task right on the scheduled time. Thats why its called "Real" Time OS.
 
 **Multitasking in RTOS**
-As our STM32F401CCU6 has only one hardware thread, Multi-threading is impossible here. The CPU runs one task at a time, but the RTOS switches between tasks so quickly it feels like they run in parallel.
+- As our STM32F401CCU6 has only one hardware thread, Multi-threading is impossible here. The CPU runs one task at a time, but the RTOS switches between tasks so quickly it feels like they run in parallel.
 - Each task gets CPU time according to its priority and scheduling policy.
 - The RTOS uses a scheduler and context switching to make this happen.
   
