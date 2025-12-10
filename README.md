@@ -19,18 +19,13 @@
     ```
 2. **Open the project** in STM32CubeIDE  
    (or import as an existing workspace project — `.project`, `.cproject`, and `.mxproject` are included)
-3. **Configure hardware (if needed):**
-    - Ensure ADC channels correspond to LM35 (e.g., **PA0**) and LDR (e.g., **PA1**)
-    - Ensure USART2 pins (**PA2/PA3**) are correctly configured
-    - Verify LED pins (e.g., **PB6**, **PB7**) are set properly
-4. **Build the project**  
+3. **Configure hardware **
+   - The Configuration for the current setup is given below
+5. **Build the project**  
    Compile and link using STM32CubeIDE's build option
-5. **Flash to the MCU**  
+6. **Flash to the MCU**  
    Use **ST-LINK** or the IDE's built-in debugger/flashing tools
-6. **Run / Observe:**
-    - Live temperature and LDR readings via **USART2**
-    - LED behavior (status LED, LDR-based LED control)
-    - Proper RTOS task scheduling and responsiveness
+7. **Run**
       
 ## What is RTOS?
 RTOS stands for Real-Time Operating System — basically, it’s an operating system with a strict sense of timing.
@@ -56,7 +51,7 @@ As our STM32F401CCU6 has only one hardware thread, Multi-threading is impossible
 ---
 ## Default Setup
 
-#### Components Used
+#### Hardware Components Used
 - STM32F401CCU6
 - LM35 - Temperature Sensor
 - GL5528 - LDR
@@ -68,10 +63,8 @@ As our STM32F401CCU6 has only one hardware thread, Multi-threading is impossible
 
 PA0 -> LM35(Temp Sensor) - ADC1IN0
 PA1 -> GL5528 (LDR) - ADC1IN1
-
 PA2 -> USART2 RX
 PA3 -> USART2 TX
-
 PB6 -> LED (startup)
 PB7 -> LED (config with LDR)
 
